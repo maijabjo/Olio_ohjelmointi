@@ -1,8 +1,11 @@
-#include "game.h"
+#include "mainwindow.h"
 
-int main()
+#include <QApplication>
+
+int main(int argc, char *argv[])
 {
-    Game gameObject(10);
-    gameObject.play();
-    return 0;
+    QApplication a(argc, argv);
+    MainWindow w;
+    w.show();
+    return a.exec();
 }
